@@ -10,6 +10,7 @@ import java.util.random.RandomGenerator;
 
 public class arrayRandomLauncher {
     public static void main(String[] args) {
+        System.out.println("ArrayInterval:");
         Scanner scanner = new Scanner(System.in);
         Array ownArray = new Array(scanner.nextInt(), scanner.nextInt(), scanner.nextInt());
         int[] array = arrayInitialize(ownArray);
@@ -42,12 +43,12 @@ public class arrayRandomLauncher {
 
     private static void minArrayValue(int[] array) {
         Arrays.sort(array);
-        System.out.println("Минимальное значение: " + array[0]);
+        System.out.println("Min value: " + array[0]);
     }
 
     private static void maxArrayValue(int[] array) {
         Arrays.sort(array);
-        System.out.println("Максимальное значение: " + array[array.length - 1]);
+        System.out.println("Max value: " + array[array.length - 1]);
     }
 
     private static void averageArrayValue(int[] array) {
@@ -57,6 +58,6 @@ public class arrayRandomLauncher {
         }
         avrN = avrN/array.length;
 
-        System.out.println("Среднее значение: " + avrN);
+        System.out.println("Average value: " + avrN);
     }
 }
